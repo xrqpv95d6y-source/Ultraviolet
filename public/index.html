@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Docs</title> <link rel="stylesheet" href="style.css">
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-shell">
+        <nav class="glass-sidebar">
+            <button class="nav-btn" onclick="load('games')"><i data-lucide="gamepad-2"></i></button>
+            <button class="nav-btn" onclick="load('social')"><i data-lucide="message-circle"></i></button>
+            <button class="nav-btn panic" onclick="panic()"><i data-lucide="shield-alert"></i></button>
+        </nav>
+        <main class="content">
+            <div class="top-nav">
+                <input type="text" id="uv-address" placeholder="Search Google or type a URL...">
+            </div>
+            <iframe id="uv-frame" class="fade-in"></iframe>
+        </main>
+    </div>
+    <script src="main.js"></script> <script>lucide.createIcons();</script>
+</body>
+</html>
